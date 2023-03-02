@@ -1,0 +1,215 @@
+.page__college {
+    padding: 40px 0;
+}
+
+.college-title {
+    text-align: center;
+    font-weight: 500;
+    font-size: 3rem;
+}
+
+.college__sub-title {
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.specialties-title {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 1.8rem;
+}
+
+.specialties__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.specialties__item {
+    list-style-type: none;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+@media (min-width: 1660.98px) {
+    .college-title {
+        font-size: 5rem;
+    }
+
+    .college__sub-title {
+        font-size: 2rem;
+    }
+
+    .specialties-title {
+        font-size: 2.5rem;
+    }
+
+    .specialties__item {
+        font-size: 2rem;
+    }
+}
+
+
+.specialties__item.cheker span {
+    text-decoration: underline wavy;
+    text-underline-offset: 10px;
+    text-decoration-color: rgb(255, 61, 61);
+}
+
+.admin__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 2);
+    row-gap: 30px;
+    column-gap: 10px;
+}
+
+.item-admin__image {
+    height: 100%;
+}
+
+.item-admin__image img {
+    width: 200px;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.item-admin {
+    display: flex;
+    column-gap: 20px;
+    border-radius: 20px;
+    min-height: 280px;
+    -webkit-box-shadow: -1px 0px 2px 0px rgb(0 0 0 / 75%);
+    -moz-box-shadow: -1px 0px 2px 0px rgb(0 0 0 / 75%);
+    box-shadow: -1px 0px 2px 0px rgb(0 0 0 / 75%);
+    background: white;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+.item-admin:hover {
+    transform: scale(1.03);
+    box-shadow: none;
+}
+
+.item-admin__text {
+    padding: 25px 0 5px 0;
+}
+
+.title-admin {
+    margin: 30px 0 25px 0;
+}
+
+.college-volonter__title {
+    margin: 30px;
+    text-transform: uppercase;
+}
+
+.college-volonter__text {
+    font-size: 1.275rem;
+    margin: 0 0 15px 0;
+}
+
+@media (min-width: 1660.98px) {
+.college-volonter__text {
+    font-size: 2rem;
+}
+}
+
+.college-volonter__gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.colleg-volonter__up,
+.colleg-volonter__down {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.college-volonter__block-img {
+    flex: 0 1 49%;
+}
+
+.college-volonter__block-img img {
+    width: 100%;
+}
+
+@media (max-width: 500.98px) {
+.college-volonter__block-img {
+    flex: 0 1 100%;
+}
+}
+
+@media (min-width: 1660.98px) {
+    .item-admin__fio {
+        font-size: 1.8rem;
+    }
+
+    .item-admin__description {
+        font-size: 1.5rem;
+    }
+
+    .admin__list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 2);
+    }
+}
+
+.popup__container {
+    background: #fff;
+    padding: 40px;
+}
+
+@media (max-width: 522.98px) {
+    .item-admin__image img {
+        width: 150px;
+    }
+
+    .item-admin {
+        min-height: 230px;
+    }
+
+    .item-admin__fio {
+        font-size: 1rem;
+    }
+
+    .item-admin__text {
+        font-size: .950rem;
+    }
+
+    .specialties__item {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 464.98px) {
+    .item-admin__image img {
+        width: 100%;
+        height: 450px;
+    }
+
+    .item-admin {
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    .item-admin__text {
+        padding: 25px 0 10px 20px;
+    }
+
+    .specialties__item.cheker span {
+        text-underline-offset: 3px;
+    }
+}
+
+@media (max-width: 400.98px) {
+    .item-admin__image img {
+        width: 100%;
+        height: 330px;
+    }
+}

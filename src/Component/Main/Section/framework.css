@@ -1,0 +1,30 @@
+.frameworks-content__text,
+.frameworks__list-title {
+    font-size: 1.275rem;
+    margin: 15px 0 0 0;
+}
+
+.frameworks__list {
+    margin: 5px 0 0 30px;
+}
+
+.frameworks__item {
+    font-size: 1.175rem;
+    list-style-type: disclosure-closed;
+}
+
+@media (min-width: 1660.98px) {
+
+    .frameworks-content__text,
+    .frameworks__list-title {
+        font-size: 2rem;
+    }
+
+    .frameworks__list {
+        margin: 5px 0 0 50px;
+    }
+
+    .frameworks__item {
+        font-size: 1.875rem;
+    }
+}

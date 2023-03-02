@@ -1,0 +1,184 @@
+.profession__title {
+    margin: 0 0 30px 0;
+}
+
+.profession-item {
+    list-style-type: none;
+    padding: 0 0 15px 0;
+}
+
+.profession-item a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 1.5rem;
+    position: relative;
+    border-left: 3px solid #f2f1b544;
+    border-right: 3px solid #f2f1b544;
+    padding: 0 5px;
+    transition: all 0.3s ease 0s;
+}
+
+.profession-item a:hover {
+    border-left: 3px solid rgb(255, 232, 57);
+    border-right: 3px solid rgb(255, 232, 57);
+}
+
+.profession-link::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background: rgb(255, 232, 57);
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    transition: width 0.3s ease 0s;
+}
+
+.profession-link::before {
+    content: "";
+    width: 0;
+    height: 3px;
+    background: rgb(255, 232, 57);
+    position: absolute;
+    top: -5px;
+    left: 0;
+    transition: width 0.3s ease 0s;
+}
+
+.profession-link:hover::after {
+    width: 100%;
+}
+
+.profession-link:hover::before {
+    width: 100%;
+}
+
+.profession-title-how {
+    margin: 20px;
+}
+
+.profession-img {
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 1660.98px) {
+    .profession-item a {
+        font-size: 2rem;
+    }
+
+    .profession-img img {
+        width: 70%;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .profession-img img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 522.98px) {
+    .profession-item a {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 410.98px) {
+    .profession-item a {
+        font-size: .875rem;
+    }
+}
+
+/* ================================================= */
+
+.popup-body {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(0, 0, 0, 0.5);
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+    pointer-events: none;
+}
+
+.popup-body.visible {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.popup__container {
+    position: relative;
+    transform: scale(0);
+    transition: all 1s ease 0s;
+}
+
+.popup__container.active {
+    transform: scale(1);
+}
+
+.popup-close {
+    width: 40px;
+    cursor: pointer;
+}
+
+.popup__title {
+    border-bottom: 2px solid #eee;
+    padding: 0 0 15px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.popup__content {
+    padding: 15px 0 0 0;
+    font-weight: 500;
+}
+
+.popup__sub-title {
+    padding: 15px 0 0 0;
+    font-size: 1.5rem;
+}
+
+.popup__list {
+    margin: 0 0 0 30px;
+}
+
+.popup__item {
+    list-style-type: none;
+}
+
+@media (min-width: 1660.98px) {
+    .popup__title {
+        padding: 0 0 15px 0;
+        font-size: 2rem;
+    }
+
+    .popup__content {
+        padding: 15px 0 0 0;
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+
+    .popup__sub-title {
+        padding: 15px 0 0 0;
+        font-size: 1.5rem;
+    }
+
+    .popup__item {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 796.98px) {
+    .popup__container {
+        max-height: 500px;
+        overflow: scroll;
+    }
+}

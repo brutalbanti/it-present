@@ -1,0 +1,126 @@
+.header {
+    background: url('../../source/fon.png');
+    background-size: cover;
+    width: 100%;
+    min-height: 100%;
+}
+
+.header__logo {
+    color: white;
+    font-weight: 600;
+    text-decoration: underline wavy;
+    text-underline-offset: 5px;
+    text-decoration-color: rgb(255, 232, 57);
+    font-size: 24px;
+}
+
+.header__logo span {
+    color: rgb(255, 61, 61);
+}
+
+.header__container {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 370.98px) {
+    .header__logo {
+        font-size: 18px;
+    }
+}
+
+.menu__list {
+    display: flex;
+    gap: 15px;
+}
+
+.menu__item {
+    list-style-type: none;
+}
+
+.menu__link {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: all .3s ease 0s;
+    text-transform: uppercase;
+    font-weight: 600;
+    position: relative;
+}
+
+@media (max-width: 370.98px) {
+    .menu__link {
+        font-size: 14px;
+    }
+}
+
+.menu__link::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background: rgb(255, 232, 57);
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s ease 0s;
+}
+
+.menu__link:hover::after {
+    width: 100%;
+}
+
+.menu__link:hover {
+    color: rgb(255, 232, 57);
+}
+
+.header-content__container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title-header {
+    color: white;
+    font-size: 48px;
+    max-width: 400px;
+    margin-top: -100px;
+}
+
+.title-header span:first-child {
+    color: rgb(255, 232, 57);
+}
+
+.span-it {
+    text-decoration: underline wavy;
+    text-underline-offset: 5px;
+    text-decoration-color: rgb(255, 61, 61);
+}
+
+.header__sub-title {
+    color: white;
+    margin-top: 15px;
+}
+
+@media(min-width: 1660.98px) {
+    .menu__link {
+        font-size: 18px;
+    }
+
+    .header__logo {
+        font-size: 32px;
+    }
+
+    .title-header {
+        font-size: 40px;
+    }
+}
+
+@media(max-width: 767.98px) {
+    .title-header {
+        font-size: 26px;
+    }
+}
