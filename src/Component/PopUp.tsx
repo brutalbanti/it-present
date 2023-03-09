@@ -3,11 +3,11 @@ import close from '../source/close.svg';
 
 interface popupinfo {
     title: string,
-    subtitle: string,
+    subtitle?: string,
     content: string,
     array?: any,
-    subtitle2: string,
-    content2: string,
+    subtitle2?: string,
+    content2?: string,
     closepop: any,
     ispopup: any
 }
